@@ -16,5 +16,5 @@
 `python export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path ./ssd_mobilenet_v1_coco.config \
-    --trained_checkpoint_prefix ./checkpoints/model.ckpt-20 \
+    --trained_checkpoint_prefix ./checkpoints/model.ckpt-<check_point_number> \
     --output_directory ./model`
