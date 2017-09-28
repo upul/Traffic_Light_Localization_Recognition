@@ -7,7 +7,4 @@
 
 3. Download Bosch traffic light dataset https://hci.iwr.uni-heidelberg.de/node/6132
 
-4. Create following folders: 
- *. `checkpoints`
-*. `data`
-*. `input`
+4. Create following folders: `checkpoints`, `data`, `input`
