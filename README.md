@@ -8,3 +8,13 @@
 3. Download Bosch traffic light dataset https://hci.iwr.uni-heidelberg.de/node/6132
 
 4. Create following folders: `checkpoints`, `data`, `input`
+
+### Training Command
+`python train.py --pipeline_config_path=ssd_mobilenet_v1_coco.config --train_dir=./checkpoints`
+
+### Inference Graph Builder
+`python export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path ./ssd_mobilenet_v1_coco.config \
+    --trained_checkpoint_prefix ./checkpoints/model.ckpt-20 \
+    --output_directory ./model`
